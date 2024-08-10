@@ -1,0 +1,84 @@
+{
+    "productos": [
+        {
+            "descripcion": "OSIS+ FLEXWAX 85ML",
+            "imagen": "https://github.com/Marlonaq38/ProyectoProgra4/blob/main/images/Prod1.png",
+            "precio": 12620
+        },
+        {
+            "descripcion": "KERASTASE RESISTANCE MASQUE 200ML",
+            "imagen": "https://github.com/Marlonaq38/ProyectoProgra4/blob/main/images/Prod2.png",
+            "precio": 40257
+        },
+        {
+            "descripcion": "ALFAPARF SMOTHING MASK 200ML",
+            "imagen": "https://github.com/Marlonaq38/ProyectoProgra4/blob/main/images/Prod3.png",
+            "precio": 13587
+        },
+        {
+            "descripcion": "ALFAPARF STYLE STORIES 100ML",
+            "imagen": "https://github.com/Marlonaq38/ProyectoProgra4/blob/main/images/Prod4.png",
+            "precio": 12251
+        },
+        {
+            "descripcion": "OSIS+ DUST IT 10G",
+            "imagen": "https://github.com/Marlonaq38/ProyectoProgra4/blob/main/images/Prod5.png",
+            "precio": 13456
+        },
+        {
+            "descripcion": "KERASTASE CHRONOLOGISTE 100ML",
+            "imagen": "https://github.com/Marlonaq38/ProyectoProgra4/blob/main/images/Prod6.png",
+            "precio": 48401
+        },
+        {
+            "descripcion": "MOROCCANOIL SMOOTHING 250ML",
+            "imagen": "https://github.com/Marlonaq38/ProyectoProgra4/blob/main/images/Prod7.png",
+            "precio": 35659
+        },
+        {
+            "descripcion": "MOROCCANOIL SHAMPOO 250ML",
+            "imagen": "https://github.com/Marlonaq38/ProyectoProgra4/blob/main/images/Prod8.png",
+            "precio": 22692
+        },
+        {
+            "descripcion": "KERASTASE BLOND CONDITIONER 250ML",
+            "imagen": "https://github.com/Marlonaq38/ProyectoProgra4/blob/main/images/Prod9.png",
+            "precio": 44142
+        },
+        {
+            "descripcion": "KERASTASE CHROMA GLOSS 210ML",
+            "imagen": "https://github.com/Marlonaq38/ProyectoProgra4/blob/main/images/Prod10.png",
+            "precio": 35852
+        },
+        {
+            "descripcion": "TIGI MOISTURE SHAMPOO 400ML",
+            "imagen": "https://github.com/Marlonaq38/ProyectoProgra4/blob/main/images/Prod11.png",
+            "precio": 26086
+        },
+        {
+            "descripcion": "ALFAPARF SMOOTHING OIL 100ML",
+            "imagen": "https://github.com/Marlonaq38/ProyectoProgra4/blob/main/images/Prod12.png",
+            "precio": 19010
+        },
+        {
+            "descripcion": "ALFAPARF STYLE STORIES BLOW 150ML",
+            "imagen": "https://github.com/Marlonaq38/ProyectoProgra4/blob/main/images/Prod13.png",
+            "precio": 11829
+        },
+        {
+            "descripcion": "TIGI SMALL TALK 240ML",
+            "imagen": "https://github.com/Marlonaq38/ProyectoProgra4/blob/main/images/Prod14.png",
+            "precio": 16272
+        },
+        {
+            "descripcion": "JOICO MOISTURE CONDITIONER 250ML",
+            "imagen": "https://github.com/Marlonaq38/ProyectoProgra4/blob/main/images/Prod15.png",
+            "precio": 14141
+        },
+        {
+            "descripcion": "L'ORÉAL VITAMINO COLOR MASK 250ML",
+            "imagen": "https://github.com/Marlonaq38/ProyectoProgra4/blob/main/images/Prod16.png",
+            "precio": 29923
+        }
+   ]
+}
