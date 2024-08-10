@@ -1,0 +1,26 @@
+{
+    "servicio": [
+        {
+            "descripcion": "Lavado de Cabello",
+            "imagen": "https://raw.githubusercontent.com/Marlonaq38/ProyectoProgra4/main/images/Lavado1.png"
+        },
+        {
+            "descripcion": "Corte de Hombres",
+            "imagen": "https://raw.githubusercontent.com/Marlonaq38/ProyectoProgra4/main/images/CorteHombre.png"
+        },
+        {
+            "descripcion": "Corte de Mujeres",
+            "imagen": "https://raw.githubusercontent.com/Marlonaq38/ProyectoProgra4/main/images/CorteMujer.png"
+  
+        },
+        {
+            "descripcion": "Peinados",
+            "imagen": "https://raw.githubusercontent.com/Marlonaq38/ProyectoProgra4/main/images/Peinados.png"
+        },
+        {
+            "descripcion": "Tratamientos para el Cabello",
+            "imagen": "https://raw.githubusercontent.com/Marlonaq38/ProyectoProgra4/main/images/Tratamiento.png"
+        }
+       
+   ]
+}
