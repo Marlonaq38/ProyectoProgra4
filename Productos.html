@@ -16,6 +16,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
 </head>
 
 <body class="body">
@@ -23,7 +25,7 @@
         <div class="containerNavbar">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img class ="logo" id="logo" src="images/logo.png" ></a>
+                    <a class="navbar-brand" href="#"><img class="logo" id="logo" src="images/logo.png"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -64,154 +66,46 @@
 
     <section id="Productos" class="Productos">
 
+
         <div class="row">
 
-            <div class="row float-end mx-4 layout_padding">
-
-                <div class="col-12 col-md-3 col-lg-3 col-sm-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/Prod1.png" class="img-fluid rounded-4" alt="Imagen Con Float de Prueba 1">
-                        <h1 class="card-title pt-4 m-0">OSIS+ FLEXWAX 85ML</h1>
-                        <h1 class="secondary-font text-primary">₡12620.15</h1>
-                        <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Comprar</a>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-3 col-lg-3 col-sm-4 mb-4 ">
-                    <div class="card h-100">
-                        <img src="images/Prod2.png" class="img-fluid rounded-4" alt="Imagen Con Float de Prueba 1">
-                        <h1 class="card-title pt-4 m-0">KERASTASE RESISTANCE MASQUE 200ML</h1>
-                        <h1 class="secondary-font text-primary">₡40257.09</h1>
-                        <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Comprar</a>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-3 col-lg-3 col-sm-4 mb-4 ">
-                    <div class="card h-100">
-                        <img src="images/Prod3.png" class="img-fluid rounded-4" alt="Imagen Con Float de Prueba 1">
-                        <h1 class="card-title pt-4 m-0">ALFAPARF SMOTHING MASK 200ML</h1>
-                        <h1 class="secondary-font text-primary">₡13587.00</h1>
-                        <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Comprar</a>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-3 col-lg-3 col-sm-4 mb-4 ">
-                    <div class="card h-100">
-                        <img src="images/Prod4.png" class="img-fluid rounded-4" alt="Imagen Con Float de Prueba 1">
-                        <h1 class="card-title pt-4 m-0">ALFAPARF STYLE STORIES 100ML</h1>
-                        <h1 class="secondary-font text-primary">₡12251</h1>
-                        <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Comprar</a>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-3 col-lg-3 col-sm-4 mb-4 ">
-                    <div class="card h-100">
-                        <img src="images/Prod5.png" class="img-fluid rounded-4" alt="Imagen Con Float de Prueba 1">
-                        <h1 class="card-title pt-4 m-0">OSIS+ DUST IT 10G</h1>
-                        <h1 class="secondary-font text-primary">₡13456.19</h1>
-                        <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Comprar</a>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-3 col-lg-3 col-sm-4 mb-4 ">
-                    <div class="card h-100">
-                        <img src="images/Prod6.png" class="img-fluid rounded-4" alt="Imagen Con Float de Prueba 1">
-                        <h1 class="card-title pt-4 m-0">KERASTASE CHRONOLOGISTE 100ML</h1>
-                        <h1 class="secondary-font text-primary">₡48401.33</h1>
-                        <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Comprar</a>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-3 col-lg-3 col-sm-4 mb-4 ">
-                    <div class="card h-100">
-                        <img src="images/Prod7.png" class="img-fluid rounded-4" alt="Imagen Con Float de Prueba 1">
-                        <h1 class="card-title pt-4 m-0">MOROCCANOIL SMOOTHING 250ML</h1>
-                        <h1 class="secondary-font text-primary">₡35659.47</h1>
-                        <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Comprar</a>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-3 col-lg-3 col-sm-4 mb-4 ">
-                    <div class="card h-100">
-                        <img src="images/Prod8.png" class="img-fluid rounded-4" alt="Imagen Con Float de Prueba 1">
-                        <h1 class="card-title pt-4 m-0">MOROCCANOIL SHAMPOO 250ML</h1>
-                        <h1 class="secondary-font text-primary">₡22692.39</h1>
-                        <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Comprar</a>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-3 col-lg-3 col-sm-4 mb-4 ">
-                    <div class="card h-100">
-                        <img src="images/Prod9.png" class="img-fluid rounded-4" alt="Imagen Con Float de Prueba 1">
-                        <h3 class="card-title pt-4 m-0">KERASTASE BLOND CONDITIONER 250ML</h3>
-                        <h3 class="secondary-font text-primary">₡44142.67</h3>
-                        <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Comprar</a>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-3 col-lg-3 col-sm-4 mb-4 ">
-                    <div class="card h-100">
-                        <img src="images/Prod10.png" class="img-fluid rounded-4" alt="Imagen Con Float de Prueba 1">
-                        <h3 class="card-title pt-4 m-0">KERASTASE CHROMA GLOSS 210ML</h3>
-                        <h3 class="secondary-font text-primary">₡35852.84</h3>
-                        <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Comprar</a>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-3 col-lg-3 col-sm-4 mb-4 ">
-                    <div class="card h-100">
-                        <img src="images/Prod11.png" class="img-fluid rounded-4" alt="Imagen Con Float de Prueba 1">
-                        <h3 class="card-title pt-4 m-0">TIGI MOISTURE SHAMPOO 400ML</h3>
-                        <h3 class="secondary-font text-primary">₡26086.58</h3>
-                        <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Comprar</a>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-3 col-lg-3 col-sm-4 mb-4 ">
-                    <div class="card h-100">
-                        <img src="images/Prod12.png" class="img-fluid rounded-4" alt="Imagen Con Float de Prueba 1">
-                        <h3 class="card-title pt-4 m-0">ALFAPARF SMOOTHING OIL 100ML</h3>
-                        <h3 class="secondary-font text-primary">₡19010.42</h3>
-                        <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Comprar</a>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-3 col-lg-3 col-sm-4 mb-4 ">
-                    <div class="card h-100">
-                        <img src="images/Prod13.png" class="img-fluid rounded-4" alt="Imagen Con Float de Prueba 1">
-                        <h3 class="card-title pt-4 m-0">ALFAPARF STYLE STORIES BLOW 150ML</h3>
-                        <h3 class="secondary-font text-primary">₡11829.05</h3>
-                        <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Comprar</a>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-3 col-lg-3 col-sm-4 mb-4 ">
-                    <div class="card h-100">
-                        <img src="images/Prod14.png" class="img-fluid rounded-4" alt="Imagen Con Float de Prueba 1">
-                        <h3 class="card-title pt-4 m-0">TIGI SMALL TALK 240ML</h3>
-                        <h3 class="secondary-font text-primary">₡16272.55</h3>
-                        <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Comprar</a>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-3 col-lg-3 col-sm-4 mb-4 ">
-                    <div class="card h-100">
-                        <img src="images/Prod15.png" class="img-fluid rounded-4" alt="Imagen Con Float de Prueba 1">
-                        <h3 class="card-title pt-4 m-0">JOICO MOISTURE CONDITIONER 250ML</h3>
-                        <h3 class="secondary-font text-primary">₡14141.51</h3>
-                        <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Comprar</a>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-3 col-lg-3 col-sm-4 mb-4 ">
-                    <div class="card h-100">
-                        <img src="images/Prod16.png" class="img-fluid rounded-4" alt="Imagen Con Float de Prueba 1">
-                        <h3 class="card-title pt-4 m-0">L'ORÉAL VITAMINO COLOR MASK 250ML</h3>
-                        <h3 class="secondary-font text-primary">₡29923.81</h3>
-                        <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Comprar</a>
-                    </div>
-                </div>
-
+            <div class="row float-end mx-4 layout_padding" id="datosProductos">
+                <script>
+                    $(document).ready(function () {
+                        const apiUrl = 'https://raw.githubusercontent.com/Marlonaq38/ProyectoProgra4/main/datos/productos.json';
+        
+                        // Realiza la solicitud AJAX al API
+                        $.ajax({
+                            url: apiUrl,
+                            type: 'GET',
+                            dataType: 'json',
+                            success: function (data) {
+                                console.log('Datos recibidos:', data); // Verifica si los datos se están recibiendo
+                                const productos = data.productos;
+                                let htmlContent = '';
+        
+                                // Recorre cada propiedad y crea el HTML correspondiente
+                                productos.forEach(function (producto) {
+                                    htmlContent += `<div class="col-12 col-md-3 col-lg-3 col-sm-4 mb-4">
+                                                        <div class="card h-100">
+                                                            <img src="${producto.imagen}" class="img-fluid rounded-4" alt="Imagen">
+                                                            <h1 class="card-title pt-4 m-0">${producto.descripcion}</h1>
+                                                            <h1 class="secondary-font text-primary">₡${producto.precio}</h1>
+                                                            <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Comprar</a>
+                                                        </div>
+                                                    </div>`;
+                                });
+        
+                                // Inserta el HTML en el contenedor
+                                $('#datosProductos').html(htmlContent);
+                            },
+                            error: function (err) {
+                                console.error('Error fetching properties:', err);
+                                $('#datosProductos').html('<p>Error al cargar los productos. Por favor, inténtalo de nuevo más tarde.</p>');
+                            }
+                        });
+                    });
+                </script>
             </div>
 
         </div>
@@ -229,14 +123,21 @@
                         <h1>Peluqueria</h1>
                         <p class="blog-paragraph fs-6 mt-3">Somos una Peluqueria con mas de 10 años de experiencia, por
                             donde han pasado miles de clientes felices</p>
-                            <div class="row">
-                                <ul class="social_icon list-unstyled col text-center mt-3">
-                                    <li><a href="https://maps.app.goo.gl/kfXF5UTPAgE2t9Ks8"><img src="images/marcador-de-posicion.png" alt="Maps" class="img-fluid imagen-contacto"></a></li>
-                                    <li><a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook" class="img-fluid imagen-contacto"></a></li>
-                                    <li><a href="https://www.instagram.com"><img src="images/instagram.png" alt="Instagram" class="img-fluid imagen-contacto"></a></li>
-                                    <li><a href="https://wa.me/50683130640?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tus%20productos"><img src="images/whatsapp.png" alt="WhatsApp" class="img-fluid imagen-contacto"></a></li>
-                                </ul>
-                            </div>
+                        <div class="row">
+                            <ul class="social_icon list-unstyled col text-center mt-3">
+                                <li><a href="https://maps.app.goo.gl/kfXF5UTPAgE2t9Ks8"><img
+                                            src="images/marcador-de-posicion.png" alt="Maps"
+                                            class="img-fluid imagen-contacto"></a></li>
+                                <li><a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook"
+                                            class="img-fluid imagen-contacto"></a></li>
+                                <li><a href="https://www.instagram.com"><img src="images/instagram.png" alt="Instagram"
+                                            class="img-fluid imagen-contacto"></a></li>
+                                <li><a
+                                        href="https://wa.me/50683130640?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tus%20productos"><img
+                                            src="images/whatsapp.png" alt="WhatsApp"
+                                            class="img-fluid imagen-contacto"></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-3 col-lg-3 col-sm-4 mb-4 ">
