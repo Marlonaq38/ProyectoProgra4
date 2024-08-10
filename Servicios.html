@@ -17,6 +17,8 @@
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/Servicios.js"></script>
 </head>
 
 <body class="body">
@@ -73,7 +75,6 @@
                     dataType: 'json',
                     success: function (data) {
                         console.log('Datos recibidos:', data); // Verifica si los datos se están recibiendo
-                        debugger;
                         const servicios = data.servicio;
                         let htmlContent = '';
 
@@ -86,7 +87,7 @@
                                                 <div class="itemfloat col">
                                                 <div class="titulofloat"></div>
                                                     <h2 class="bannerfloat">${servicio.descripcion}</h2>
-                                                    <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Reservar</a>
+                                                    <button onClick="reservar()" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Reservar</button>
                                                 </div>
                                             </div>`;
                         });

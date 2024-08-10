@@ -17,6 +17,8 @@
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/Productos.js"></script>
 
 </head>
 
@@ -91,7 +93,7 @@
                                                             <img src="${producto.imagen}" class="img-fluid rounded-4" alt="Imagen">
                                                             <h1 class="card-title pt-4 m-0">${producto.descripcion}</h1>
                                                             <h1 class="secondary-font text-primary">₡${producto.precio}</h1>
-                                                            <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Comprar</a>
+                                                            <button onClick="comprar()" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Comprar</button>
                                                         </div>
                                                     </div>`;
                                 });
