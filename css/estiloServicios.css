@@ -1,0 +1,61 @@
+.body{
+    background-color: rosybrown;
+}
+.titulo{
+text-align: center;
+}
+
+.contenedorfloat{
+    padding: 10% 20% ;
+}
+
+.contenedorfloat .row{
+    margin-bottom: 50px;
+    background-color:  gray;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.imagen{
+    width: 70%;
+    float: left;
+    height: auto;
+}
+
+.social_icon li{
+    float: left;
+    padding-right: 5px;
+    width: 40px;
+    height: auto;
+}
+
+/*otros*/
+.logo{
+    width: 100px;
+    height: auto;
+}
+
+/*
+
+
+.contenedorfloat{
+    padding: 150px ;
+    overflow: hidden;
+
+}
+.itemfloat{
+    float: left;
+    text-align: center;
+}
+
+.titulofloat{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+@media (max-width: 768px){
+    .itemfloat{
+        width: 100%;
+    }
+}
+    */

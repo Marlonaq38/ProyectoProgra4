@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Locator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/Maps.css" rel="stylesheet">
+    <script>
+      const CONFIGURATION = {
+        "locations": [
+          {"title":"Parque Central de Alajuela","address1":"2Q8P+HFR","address2":"Provincia de Alajuela, Alajuela, Costa Rica","coords":{"lat":10.016610283629392,"lng":-84.21384217790987},"placeId":"ChIJnxuHWMT5oI8ReGP3TkV81Fc"}
+        ],
+        "mapOptions": {"center":{"lat":38.0,"lng":-100.0},"fullscreenControl":true,"mapTypeControl":false,"streetViewControl":false,"zoom":4,"zoomControl":true,"maxZoom":17,"mapId":""},
+        "mapsApiKey": "YOUR_API_KEY_HERE",
+        "capabilities": {"input":false,"autocomplete":false,"directions":false,"distanceMatrix":false,"details":false,"actions":false}
+      };
+
+    </script>
+    <script src="js/index.js" type="module"></script>
+  </head>
+  <body>
+    <!-- Please note unpkg.com is unaffiliated with Google Maps Platform. -->
+    <script type="module" src="https://unpkg.com/@googlemaps/extended-component-library@0.6"></script>
+
+    <!-- Uses components from the Extended Component Library; see
+         https://github.com/googlemaps/extended-component-library for more information
+         on these HTML tags and how to configure them. -->
+    <gmpx-api-loader key="AIzaSyAuSaAMrLUokD4zwnzLTB3huvPaIot9SZs" solution-channel="GMP_QB_locatorplus_v10_c"></gmpx-api-loader>
+    <gmpx-store-locator map-id="DEMO_MAP_ID"></gmpx-store-locator>
+  </body>
+</html>
