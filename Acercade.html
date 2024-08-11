@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Peluqueria Progra 4</title>
 
-    <link rel="stylesheet" type="text/css" href="css/estiloContacto.css">
+    <link rel="stylesheet" type="text/css" href="css/estiloAcercade.css">
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
@@ -16,6 +16,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">(function () { emailjs.init({ publicKey: "_wM4CyLFAYAyxA3Ul", }); })();</script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/Correo.js"></script>
+
 </head>
 
 <body class="body">
@@ -61,7 +67,7 @@
         <div class="Autor row">
             <div class="itemfloat col">
                 <div class="titulofloat">Somos una empresa que le ofrecemos distintos productos para su cabello, desde
-                    hidrataciones hasta alizados para todo tipo de cabello </div>
+                    hidrataciones hasta alizados para todo tipo de cabello</div>
                 <ul class="list-unstyled">
                     <li>
                         <a>Contáctenos</a>
@@ -70,7 +76,7 @@
                         <a>Llamanos para reservar tu cita o reserva en linea</a>
                     </li>
                     <li>
-                        <a>Alajuela, Canoas, Lirios del valle, 20101, Costa Rica</a>
+                        <a>Alajuela, Alajuela, Parque central, 20101, Costa Rica</a>
                     </li>
                     <li>
                         <a>info@peluqueria.com</a>
@@ -81,180 +87,172 @@
                 </ul>
             </div>
         </div>
+    </section>
 
-        <section class="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="contact-map box">
-                            <div id="map" class="contact-map">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4696.913842405757!2d-84.21052251890397!3d10.014698899270325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f9c458871b9f%3A0x57d47c454ef76378!2sParque%20Central%20de%20Alajuela!5e1!3m2!1ses-419!2scr!4v1723154949881!5m2!1ses-419!2scr"
-                                    width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                            </div>
+    <section class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="contact-map box">
+                        <div id="map" class="contact-map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4696.913842405757!2d-84.21052251890397!3d10.014698899270325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f9c458871b9f%3A0x57d47c454ef76378!2sParque%20Central%20de%20Alajuela!5e1!3m2!1ses-419!2scr!4v1723154949881!5m2!1ses-419!2scr"
+                                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
                     </div>
-                    <div class="col-sm-12">
-                        <div class="row">
-                            <div class="col">
-                                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                                    <div class="row">
-                                        <div class="col-md-6 mb-3">
-                                            <div class="form-group">
-                                                <input type="text" name="name"
-                                                    class="form-control form-control-lg form-control-a"
-                                                    placeholder="Nombre" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 mb-3">
-                                            <div class="form-group">
-                                                <input name="email" type="email"
-                                                    class="form-control form-control-lg form-control-a"
-                                                    placeholder="Correo" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 mb-3">
-                                            <div class="form-group">
-                                                <input name="Fecha" type="date"
-                                                    class="form-control form-control-lg form-control-a"
-                                                    placeholder="Fecha Nacimiento" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 mb-3">
-                                            <div class="form-group">
-                                                <input name="text" type="text"
-                                                    class="form-control form-control-lg form-control-a"
-                                                    placeholder="Rango" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 mb-3">
-                                            <div class="form-group">
-                                                <input list="Genero" name="Genero" class="form-control form-control-lg form-control-a" placeholder = "Genero" required>
-                                                <datalist id="Genero">
-                                                    <option value="Femenino">
-                                                    <option value="Masculino">
-                                                </datalist>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 mb-3">
-                                            <div class="form-group">
-                                                <input list="Grado" name="Grado" class="form-control form-control-lg form-control-a" placeholder = "Grado" required>
-                                                <datalist id="Grado">
-                                                    <option value="Escolar">
-                                                    <option value="Colegio">
-                                                    <option value="Bachillerato">
-                                                    <option value="Licenciatura"></option>
-                                                </datalist>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 mb-3">
-                                            <div class="form-group">
-                                                <input type="text" name="subject"
-                                                    class="form-control form-control-lg form-control-a"
-                                                    placeholder="Asunto" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <textarea name="message"
-                                                    class="form-control form-control-lg form-control-a" name="message"
-                                                    cols="45" rows="8" placeholder="Mensaje" required></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 my-3">
-                                            <div class="mb-3">
-                                                <div class="loading">Loading</div>
-                                                <div class="error-message"></div>
-                                                <div class="sent-message">Your message has been sent. Thank you!</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-12 text-center">
-                                            <button type="submit" class="btn btn-a">Send Message</button>
-                                        </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <input type="text" name="name" id="txtNombre"
+                                            class="form-control form-control-lg form-control-a" placeholder="Nombre"
+                                            required>
                                     </div>
-                                </form>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <input name="email" type="email" id="txtEmail"
+                                            class="form-control form-control-lg form-control-a" placeholder="Correo"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <input name="Fecha" type="date" id="date"
+                                            class="form-control form-control-lg form-control-a"
+                                            placeholder="Fecha Nacimiento" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <input name="text" type="text" id="txtRango"
+                                            class="form-control form-control-lg form-control-a" placeholder="Rango"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <select list="Genero" name="Genero" id="txtGenero"
+                                            class="form-control form-control-lg form-control-a text-black" placeholder="Seleccione un genero"
+                                            required>
+                                            <option value="">Seleccione un genero</option>
+                                            <option value="Femenino">Femenino</option>
+                                            <option value="Masculino">Masculino</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <select list="Grado" name="Grado" id="txtGrado"
+                                            class="form-control form-control-lg form-control-a" placeholder="Seleccione un Grado Academico"
+                                            required>
+                                            <option value="">Seleccione un Grado Academico</option>
+                                            <option value="Primaria">Primaria</option>
+                                            <option value="Secundaria">Secundaria</option>
+                                            <option value="Universidad">Universidad</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <div class="form-group">
+                                        <input type="text" name="subject" id="txtAsunto"
+                                            class="form-control form-control-lg form-control-a" placeholder="Asunto"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea name="message" class="form-control form-control-lg form-control-a"
+                                            id="txtMensaje" cols="45" rows="8" placeholder="Mensaje"
+                                            required></textarea>
+                                    </div>
+                                </div>
+                                <div class="m-2 col-md-12 text-center">
+                                    <button type="button" onClick="sendEmail()"
+                                        class="btn btn-dark text-uppercase fs-6 rounded-1">Enviar!</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section><!-- End Contact Single-->
+        </div>
+    </section><!-- End Contact Single-->
 
 
-        <footer id="footer">
+    <footer id="footer">
 
-            <div class="Espacio">
+        <div class="Espacio">
 
-                <div class="row">
+            <div class="row">
 
-                    <div class="col-12 col-md-3 col-lg-3 col-sm-4 mb-4 ">
-                        <div class="footer-menu">
-                            <h3>Peluqueria</h3>
-                            <p class="blog-paragraph fs-6 mt-3">Somos una Peluqueria con mas de 10 años de experiencia,
-                                por
-                                donde han pasado miles de clientes felices</p>
-                            <div class="row">
-                                <ul class="social_icon list-unstyled col text-center mt-3">
-                                    <li><a href="https://maps.app.goo.gl/kfXF5UTPAgE2t9Ks8"><img
-                                                src="images/marcador-de-posicion.png" alt="Maps"
-                                                class="img-fluid imagen-contacto"></a></li>
-                                    <li><a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook"
-                                                class="img-fluid imagen-contacto"></a></li>
-                                    <li><a href="https://www.instagram.com"><img src="images/instagram.png"
-                                                alt="Instagram" class="img-fluid imagen-contacto"></a></li>
-                                    <li><a
-                                            href="https://wa.me/50683130640?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tus%20productos"><img
-                                                src="images/whatsapp.png" alt="WhatsApp"
-                                                class="img-fluid imagen-contacto"></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-3 col-lg-3 col-sm-4 mb-4 ">
-                        <div class="footer-menu">
-                            <h3>Inicio</h3>
-                            <ul class="menu-list list-unstyled">
-                                <li class="menu-item">
-                                    <a href="#" class="nav-link">Inicio</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#" class="nav-link">Servicios</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#" class="nav-link">Productos</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#" class="nav-link">Contacto</a>
-                                </li>
+                <div class="col-12 col-md-3 col-lg-3 col-sm-4 mb-4 ">
+                    <div class="footer-menu">
+                        <h3>Nuestras Redes</h3>
+                        <div class="row">
+                            <ul class="social_icon list-unstyled col text-center mt-3">
+                                <li><a href="https://maps.app.goo.gl/kfXF5UTPAgE2t9Ks8"><img
+                                            src="images/marcador-de-posicion.png" alt="Maps"
+                                            class="img-fluid imagen-contacto"></a></li>
+                                <li><a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook"
+                                            class="img-fluid imagen-contacto"></a></li>
+                                <li><a href="https://www.instagram.com"><img src="images/instagram.png" alt="Instagram"
+                                            class="img-fluid imagen-contacto"></a></li>
+                                <li><a
+                                        href="https://wa.me/50683130640?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tus%20productos"><img
+                                            src="images/whatsapp.png" alt="WhatsApp"
+                                            class="img-fluid imagen-contacto"></a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3 col-lg-3 col-sm-4 mb-4 ">
-                        <div class="footer-menu">
-                            <h3>Informacion</h5>
-                                <ul class="menu-list list-unstyled">
-                                    <li class="menu-item">
-                                        <a href="#" class="nav-link">Preguntas frecuentes</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="#" class="nav-link">Ubicacion</a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="#" class="nav-link">Politicas</a>
-                                    </li>
-                                </ul>
-                        </div>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3 col-sm-4 mb-4 ">
+                    <div class="footer-menu">
+                        <h3>Inicio</h3>
+                        <ul class="menu-list list-unstyled">
+                            <li class="menu-item">
+                                <a href="index.html" class="nav-link">Inicio</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="Servicios.html" class="nav-link">Servicios</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="Productos.html" class="nav-link">Productos</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="Acercade.html" class="nav-link">Contacto</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-12 col-md-3 col-lg-3 col-sm-4 mb-4 ">
-                        <div>
-                            <h3>Proyecto Peluqueria Programacion 4</h3>
-                            <p class="blog-paragraph fs-6">Marlon Alvarado Quesada</p>
-                        </div>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3 col-sm-4 mb-4 ">
+                    <div class="footer-menu">
+                        <h3>Informacion</h5>
+                            <ul class="menu-list list-unstyled">
+                                <li class="menu-item">
+                                    <a href="#" class="nav-link">Preguntas frecuentes</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="nav-link">Ubicacion</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="nav-link">Politicas</a>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3 col-sm-4 mb-4 ">
+                    <div>
+                        <h3>Proyecto Peluqueria Programacion 4</h3>
+                        <p class="blog-paragraph fs-6">Marlon Alvarado Quesada</p>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
 
 

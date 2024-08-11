@@ -1,0 +1,41 @@
+.Autor{
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+    margin: 0% auto;
+}
+.itemfloat{
+    text-align: center;
+    font-size: x-large;
+}
+.itemfloat img{
+    width: 70%;
+    height: auto;
+}
+.titulofloat{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.body{
+    background-color: rosybrown;
+}
+
+.navbar{
+    background-color: rosybrown;
+}
+.Espacio{
+    background-color: rosybrown;
+}
+.social_icon li{
+    float: left;
+    padding-right: 5px;
+    width: 40px;
+    height: auto;
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+}
