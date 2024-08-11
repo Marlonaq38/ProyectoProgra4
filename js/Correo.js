@@ -36,7 +36,7 @@ function sendEmail() {
               icon: "success",
               title: "Se ha enviado el mensaje con éxito",
               showConfirmButton: false,
-              timer: 15000
+              timer: 2500
             });
           });
     }

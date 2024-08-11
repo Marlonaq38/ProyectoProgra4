@@ -21,6 +21,9 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/Correo.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+    <script src="js/recaptcha.js"></script>
+
 
 </head>
 
@@ -88,7 +91,6 @@
             </div>
         </div>
     </section>
-
     <section class="contact">
         <div class="container">
             <div class="row">
@@ -136,8 +138,8 @@
                                 <div class="col-md-6 mb-3">
                                     <div class="form-group">
                                         <select list="Genero" name="Genero" id="txtGenero"
-                                            class="form-control form-control-lg form-control-a text-black" placeholder="Seleccione un genero"
-                                            required>
+                                            class="form-control form-control-lg form-control-a text-black"
+                                            placeholder="Seleccione un genero" required>
                                             <option value="">Seleccione un genero</option>
                                             <option value="Femenino">Femenino</option>
                                             <option value="Masculino">Masculino</option>
@@ -147,8 +149,8 @@
                                 <div class="col-md-6 mb-3">
                                     <div class="form-group">
                                         <select list="Grado" name="Grado" id="txtGrado"
-                                            class="form-control form-control-lg form-control-a" placeholder="Seleccione un Grado Academico"
-                                            required>
+                                            class="form-control form-control-lg form-control-a"
+                                            placeholder="Seleccione un Grado Academico" required>
                                             <option value="">Seleccione un Grado Academico</option>
                                             <option value="Primaria">Primaria</option>
                                             <option value="Secundaria">Secundaria</option>
@@ -170,6 +172,10 @@
                                             required></textarea>
                                     </div>
                                 </div>
+                                <form action="">
+                                    <div id="recaptcha" class="g-recaptcha" data-sitekey = '6LdvfCQqAAAAAN5SdVUoE2XXllJsfXnTSMc4pbHM'>
+                                    </div>
+                                </form>
                                 <div class="m-2 col-md-12 text-center">
                                     <button type="button" onClick="sendEmail()"
                                         class="btn btn-dark text-uppercase fs-6 rounded-1">Enviar!</button>
