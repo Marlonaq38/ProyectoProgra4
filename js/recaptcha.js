@@ -1,4 +1,4 @@
-function onLoadCallBack(){
+function onloadCallback(){
     grecaptcha.render('recaptcha',{
       sitekey:'6LdvfCQqAAAAAN5SdVUoE2XXllJsfXnTSMc4pbHM',
       callback: successCallBack,
